@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon.png" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">
+          YachtJet take pride in providing the best possible service and experience to our customers
+        </h2>
+
+        <p class="section-text">
+          Our customers have enjoyed unforgettable moments on our yachts. Don't just take our word for it - read on to
+          find out what they have to say about their journey with us.
+        </p>
+
+        <div class="swiper-container">
+          <ul class="reviews-list swiper-wrapper">
+            <li class="reviews-list-item swiper-slide">
+              <img
+                class="reviews-list-img"
+                src="./images/reviews/img1.png"
+                srcset="./images/reviews/img1@2x.png 2x"
+                alt="John Wax"
+              />
+
+              <h3 class="reviews-list-title">John Wax</h3>
+              <p class="reviews-list-text">
+                I rented the Lagoon 620 with my family for a week-long vacation and it was the best decision ever. The
+                yacht was spacious, comfortable, and luxurious, and the crew took care of everything.
+              </p>
+            </li>
+            <li class="reviews-list-item swiper-slide">
+              <img
+                class="reviews-list-img"
+                src="./images/reviews/img2.png"
+                srcset="./images/reviews/img2@2x.png 2x"
+                alt="Victoria Romashenko"
+              />
+
+              <h3 class="reviews-list-title">Victoria Romashenko</h3>
+              <p class="reviews-list-text">
+                The Sunseeker Manhattan 66 was the perfect choice for our romantic getaway. The yacht was beautifully
+                designed, with all the amenities we needed, and the crew was attentive and friendly.
+              </p>
+            </li>
+            <li class="reviews-list-item swiper-slide">
+              <img
+                class="reviews-list-img"
+                src="./images/reviews/img3.png"
+                srcset="./images/reviews/img3@2x.png 2x"
+                alt="Ihor Trachuk"
+              />
+
+              <h3 class="reviews-list-title">Ihor Trachuk</h3>
+              <p class="reviews-list-text">
+                The Azimut 80 was the most luxurious yacht I've ever been on. The cabins were spacious and elegant, and
+                the outdoor areas were perfect for relaxing and entertaining. Worth every penny!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1, // Show 1 slide at a time
+        spaceBetween: 0, // No space between slides
+        loop: true, // Optional: Makes the slider loop infinitely
+      });
+    </script>
+  </body>
+</html>
